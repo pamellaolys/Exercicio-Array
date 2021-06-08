@@ -50,7 +50,7 @@ Nas duas primeiras opções uma terceira matriz 2 x 2 deve ser criada.
 				}
 			}
 		}
-		else if(usuario == 2) {
+		if(usuario == 2) {
 			for(int l= 0; l < 2; l++) {
 				for (int c = 0; c < 2; c++) {
 					matrizX[l][c] = matrizDois[l][c] - matrizUm[l][c] ; 
@@ -58,31 +58,30 @@ Nas duas primeiras opções uma terceira matriz 2 x 2 deve ser criada.
 				}
 			}
 		}
-		else if(usuario ==3) {
+		if(usuario ==3) {
 			System.out.println("Digite uma constante: ");
 			constante = leia.nextDouble();
 			for(int l=0; l < 2; l++) {
 				for (int c = 0; c < 2; c++) {
 					matrizUm[l][c] = matrizUm[l][c] + constante;
 					 matrizDois[l][c] =  matrizDois[l][c] + constante;
-					 System.out.println("\nA soma das duas matrizes será de: " + matrizUm[l][c]);
-					 System.out.println("\nA soma das duas matrizes será de: " + matrizDois[l][c]);
+					 System.out.println("\nA soma da primeira matriz com a costante é será de: " + matrizUm[l][c]);
+					 System.out.println("\nA soma da segunda matriz com a costante é será de: \" : " + matrizDois[l][c]);
 		}
 	}
 }
-		else if(usuario == 4) {
+		if(usuario == 4) {
 			System.out.println("A matriz um:");
 			for(int l= 0; l < 2; l++) {
 				for (int c = 0; c < 2; c++) {
 					System.out.println(matrizUm[l][c]);
 				}
-			}
-		}
-				
-				System.out.println("A matriz dois:");
-				for(int l= 0; l < 2; l++) {
-					for (int c = 0; c < 2; c++){
-					System.out.println(matrizDois[l][c]);
+					}
+					System.out.println("A matriz dois:");
+					for(int l= 0; l < 2; l++) {
+						for (int c = 0; c < 2; c++){
+						System.out.println(matrizDois[l][c]);
+				}
 			}
 		}
 	}
